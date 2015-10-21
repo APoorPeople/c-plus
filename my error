@@ -1,0 +1,68 @@
+/*#include<iostream.h>
+#include<fstream.h>
+void PrintStarts();
+void main()
+{
+	int a,b,c;
+	cin>>a>>b>>c;
+
+	cout<<a<<endl;
+	PrintStarts();
+	
+
+	cout<<b<<endl;
+	
+	PrintStarts();
+
+	cout<<c<<endl;
+	PrintStarts();
+
+}
+
+void PrintStarts()
+{
+	int j;
+	int h;
+	cout<<"input j";
+	cin>>j;
+	cout<<"input h";
+	cin>>h;
+	for(int i=0;i<j;i++)
+	{
+		for(i=0;i<h;i++)
+		{
+			cout<<"*";
+		}
+		cout<<"\n";
+	}
+	
+}*/
+#include<iostream.h>
+void PrintStars(int m,int n,char c)
+{
+	int i,j;
+	for(i=0;i<m;i++)
+	{
+		for(j=0;j<n;j++)
+		{
+			cout<<c;
+		}
+		cout<<endl;
+	}
+}
+void main()
+{
+	int x,y;
+	char ch;
+	cin>>x>>y>>ch;
+
+	cout<<x<<endl;
+	PrintStars(x,y,ch);
+
+	cout<<y<<endl;
+	PrintStars(x,y,ch);
+
+	
+	cout<<ch<<endl;
+	PrintStars(x,y,ch);
+}
